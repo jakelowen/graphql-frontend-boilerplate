@@ -1,0 +1,50 @@
+{
+  "name": "graphql-frontend-boilerplate",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@material-ui/core": "^1.5.0",
+    "@material-ui/icons": "^2.0.2",
+    "apollo-cache-inmemory": "^1.2.7",
+    "apollo-client": "^2.3.8",
+    "apollo-link": "^1.2.2",
+    "apollo-link-context": "^1.0.8",
+    "apollo-link-error": "^1.1.0",
+    "apollo-link-http": "^1.5.4",
+    "classnames": "^2.2.6",
+    "cookie": "^0.3.1",
+    "formik": "^1.0.3",
+    "graphql": "^0.13.2",
+    "graphql-tag": "^2.9.2",
+    "jwt-decode": "^2.2.0",
+    "lodash": "^4.17.10",
+    "react": "^16.4.2",
+    "react-apollo": "^2.1.11",
+    "react-dom": "^16.4.2",
+    "react-router": "^4.3.1",
+    "react-router-dom": "^4.3.1",
+    "react-scripts-ts": "2.17.0",
+    "yup": "^0.26.2"
+  },
+  "scripts": {
+    "start": "react-scripts-ts start",
+    "build": "react-scripts-ts build",
+    "test": "react-scripts-ts test --env=jsdom --watchAll",
+    "eject": "react-scripts-ts eject",
+    "gen-graphql-types": "apollo codegen:generate --schema=schema.json --target=typescript"
+  },
+  "devDependencies": {
+    "@types/classnames": "^2.2.6",
+    "@types/cookie": "^0.3.1",
+    "@types/jest": "^23.3.1",
+    "@types/jwt-decode": "^2.2.1",
+    "@types/lodash": "^4.14.116",
+    "@types/node": "^10.7.1",
+    "@types/react": "^16.4.11",
+    "@types/react-dom": "^16.0.7",
+    "@types/react-router-dom": "^4.3.0",
+    "@types/react-test-renderer": "^16.0.2",
+    "@types/yup": "^0.24.8",
+    "typescript": "^3.0.1"
+  }
+}

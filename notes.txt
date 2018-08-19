@@ -1,0 +1,11 @@
+To generate types from schema
+
+
+jakelowen:~/Code/projects/graphql-frontend-boilerplate$ apollo schema:download --endpoint=https://vast-depths-13746.herokuapp.com/
+ ✔ Loading Apollo config
+ ✔ Fetching current schema
+ ✔ Saving schema to schema.json
+jakelowen:~/Code/projects/graphql-frontend-boilerplate$ apollo codegen:generate --schema=schema.json --target=typescript
+ ✔ Loading Apollo config
+ ✔ Scanning for GraphQL queries (35 found)
+ ✔ Generating query files with 'typescript' target - wrote 2 files
