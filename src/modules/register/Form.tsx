@@ -29,6 +29,8 @@ const styles = ({ spacing }: Theme) =>
   });
 
 export interface RegisterFormValues {
+  firstName: string;
+  lastName: string;
   email: string;
   password: string;
 }
@@ -60,7 +62,13 @@ class SignInForm extends React.PureComponent<Props> {
 
     return (
       <Formik
-        initialValues={{ email: "", password: "", confirmPassword: "" }}
+        initialValues={{
+          firstName: "",
+          lastName: "",
+          email: "",
+          password: "",
+          confirmPassword: ""
+        }}
         onSubmit={onSubmit}
         validationSchema={schema}
         render={() => (
@@ -95,6 +103,24 @@ class SignInForm extends React.PureComponent<Props> {
               fullWidth={true}
             />
 
+            <Field
+              type="text"
+              name="firstName"
+              placeholder="First Name"
+              label="First Name"
+              component={Input}
+              fullWidth={true}
+            />
+
+            <Field
+              type="text"
+              name="lastName"
+              placeholder="Last Name"
+              label="Last Name"
+              component={Input}
+              fullWidth={true}
+            />
+
             <Button
               type="submit"
               fullWidth={true}
@@ -108,7 +134,7 @@ class SignInForm extends React.PureComponent<Props> {
             <div className={classes.otherLinks}>
               {/* Link to register */}
               <FormOptionLink
-                to="/create-account"
+                to="/register"
                 message="New? Create Account."
                 fullWidth={true}
               />

@@ -23,6 +23,8 @@ export class RegisterFormConnector extends React.Component<Props> {
     mutation({
       variables: {
         input: {
+          firstName: values.firstName,
+          lastName: values.lastName,
           email: values.email,
           password: values.password
         }

@@ -100,10 +100,11 @@ class SignInForm extends React.PureComponent<Props> {
               >
                 Change Password
               </Button>
+
               <div className={classes.otherLinks}>
                 {/* Link to register */}
                 <FormOptionLink
-                  to="/create-account"
+                  to="/register"
                   message="New? Create Account."
                   fullWidth={true}
                 />
