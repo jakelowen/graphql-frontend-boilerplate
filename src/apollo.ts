@@ -22,7 +22,7 @@ const errorLink = onError(({ networkError, graphQLErrors }) => {
 
 const httpLink = new HttpLink({
   credentials: "include",
-  uri: "https://vast-depths-13746.herokuapp.com/"
+  uri: process.env.REACT_APP_SERVER_URL
 });
 
 const authLink = setContext((_, { headers }) => {
