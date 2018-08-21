@@ -90,9 +90,7 @@ class AuthMenu extends React.PureComponent<Props, State> {
                       onClose={this.handleMenuClose}
                     >
                       <MenuItem
-                        onClick={() =>
-                          this.props.history.push("/account-settings")
-                        }
+                        onClick={() => this.props.history.push("/u/settings")}
                       >
                         Settings
                       </MenuItem>

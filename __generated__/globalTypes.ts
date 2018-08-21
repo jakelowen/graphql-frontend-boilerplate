@@ -30,6 +30,11 @@ export interface resendConfirmationEmailInput {
   email: string;
 }
 
+export interface updateProfileInput {
+  firstName?: string | null;
+  lastName?: string | null;
+}
+
 //==============================================================
 // END Enums and Input Objects
 //==============================================================

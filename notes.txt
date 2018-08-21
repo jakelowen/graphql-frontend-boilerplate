@@ -1,7 +1,7 @@
 To generate types from schema
 
 
-jakelowen:~/Code/projects/graphql-frontend-boilerplate$ apollo schema:download --endpoint=https://vast-depths-13746.herokuapp.com/
+jakelowen:~/Code/projects/graphql-frontend-boilerplate$ apollo schema:download --endpoint=http://localhost:4000
  ✔ Loading Apollo config
  ✔ Fetching current schema
  ✔ Saving schema to schema.json

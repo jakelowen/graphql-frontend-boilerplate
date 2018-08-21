@@ -8,6 +8,7 @@ import ForgotPasswordChangePage from "../modules/forgotPasswordChange/Page";
 import AuthedIndexPage from "../modules/authedIndex/Page";
 import IndexPage from "../modules/index/Page";
 import SettingsPage from "../modules/settings/Page";
+import FourOhFour from "./FourOhFour";
 
 export const Routes = () => (
   <BrowserRouter>
@@ -32,6 +33,7 @@ export const Routes = () => (
         path="/change-password/:token"
         component={ForgotPasswordChangePage}
       />
+      <Route component={FourOhFour} />
     </Switch>
   </BrowserRouter>
 );
