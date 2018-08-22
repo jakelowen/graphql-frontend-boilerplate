@@ -30,6 +30,11 @@ export interface resendConfirmationEmailInput {
   email: string;
 }
 
+export interface changePasswordInput {
+  currentPassword: string;
+  newPassword: string;
+}
+
 export interface updateProfileInput {
   firstName?: string | null;
   lastName?: string | null;

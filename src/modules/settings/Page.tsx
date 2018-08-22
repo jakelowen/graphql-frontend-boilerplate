@@ -12,6 +12,7 @@ import EmailIcon from "@material-ui/icons/EmailOutlined";
 import Grid from "@material-ui/core/Grid";
 import FaceIcon from "@material-ui/icons/FaceOutlined";
 import UpdateProfileConnectedForm from "./updateProfile/Connector";
+import ChangePasswordConnectedForm from "./changePassword/Connector";
 
 interface Props extends WithStyles<typeof styles> {}
 
@@ -43,7 +44,7 @@ class AuthedIndex extends React.Component<Props> {
             </Grid>
             <Grid item={true} xs={6}>
               <FormBox icon={<EmailIcon />} title="Change Password">
-                stuff in here
+                <ChangePasswordConnectedForm />
               </FormBox>
             </Grid>
           </Grid>
