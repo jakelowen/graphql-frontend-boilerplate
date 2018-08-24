@@ -33,7 +33,7 @@
     "test": "react-scripts-ts test --env=jsdom --watchAll",
     "eject": "react-scripts-ts eject",
     "gen-graphql-types": "apollo codegen:generate --schema=schema.json --target=typescript",
-    "deploy": "now --docker -e REACT_APP_SERVER_URL=\"https://graphl-server-boilerplate.herokuapp.com/\""
+    "deploy": "now --docker"
   },
   "devDependencies": {
     "@types/classnames": "^2.2.6",
