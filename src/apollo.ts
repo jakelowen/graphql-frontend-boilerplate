@@ -5,11 +5,6 @@ import { onError } from "apollo-link-error";
 import { HttpLink } from "apollo-link-http";
 import { setContext } from "apollo-link-context";
 
-console.log(
-  "!!! process.env.REACT_APP_SERVER_URL",
-  process.env.REACT_APP_SERVER_URL
-);
-
 const errorLink = onError(({ networkError, graphQLErrors }) => {
   if (graphQLErrors) {
     graphQLErrors.map(({ message, locations, path }) =>
